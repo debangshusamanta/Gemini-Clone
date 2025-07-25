@@ -1,0 +1,199 @@
+.Main {
+    width: 100%;
+}
+
+.Main .navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.Main .navbar img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.Main .welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    min-height: 75vh;
+    margin: auto;
+    font-size: 60px;
+}
+
+.Main .result {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+    min-height: 75vh;
+    margin: auto;
+    font-size: 15px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.Main .result .question {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.Main .result .question span {
+    background-color: rgb(224, 224, 224);
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 30px;
+}
+
+.Main .result .question img {
+    width: 40px;
+    height: 40px;
+}
+
+
+.Main .result .answer {
+    display: flex;
+    position: relative;
+    gap: 15px;
+}
+
+.Main .result .answer img {
+    width: 50px;
+    height: 50px;
+}
+
+.Main .result .answer span {
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.Main .welcome span {
+    background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Main .searchbox {
+    margin: auto;
+    width: 40%;
+    border: 1px solid rgb(151, 149, 149);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.Main .searchbox input {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.Main .searchbox input::placeholder {
+    font-size: 16px;
+}
+
+.Main .searchbox img {
+    width: 16px;
+    height: 16px;
+}
+
+.Main .searchbox .down {
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Main .searchbox .down .images {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-size: 14px;
+}
+
+.Main .searchbox .down .images div {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 600;
+    color: rgb(92, 91, 91);
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.Main .searchbox .down .voice img {
+    width: 18px;
+    height: 18px;
+}
+
+.Main .searchbox .down .voice {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.Main .searchbox .down .voice div {
+    padding: 10px;
+}
+
+.Main .searchbox .down .voice div:hover {
+    background-color: rgb(233, 233, 233);
+    border-radius: 50%;
+}
+
+.Main .searchbox .down .images .div1:hover {
+    border-radius: 50%;
+    background-color: rgb(233, 233, 233);
+}
+
+.Main .searchbox .down .images .div2:hover {
+    border-radius: 30px;
+    background-color: rgb(233, 233, 233);
+}
+
+.Main .searchbox .down .images .div3:hover {
+    border-radius: 30px;
+    background-color: rgb(233, 233, 233);
+}
+
+.Main .loading {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Main .loading hr {
+    border: none;
+    border-radius: 4px;
+    background-color: #f6f7f8;
+    background: linear-gradient(to right, #9ed7ff, #ffffff, #9ed7ff);
+    background-size: 800px 50px;
+    height: 20px;
+    animation: loader 3s infinite linear;
+}
+
+@keyframes loader {
+    0% {
+        background-position: -800px 0;
+    }
+
+    100% {
+        background-position: 800px 0;
+    }
+}
