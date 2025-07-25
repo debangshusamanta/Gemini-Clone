@@ -1,6 +1,7 @@
 import { useContext, useState } from 'react'
 import './Sidebar.css'
 import { MyContext } from '../../context/Context'
+import assets from '../../assets/assets.js'
 
 const Sidebar = () => {
 
@@ -12,11 +13,11 @@ const Sidebar = () => {
     <div className='sidebar'>
         <div className="top">
             <div className="menu">
-                <img onClick={()=>{setexpand(!expand)}} src="menu.png" alt="" />
-                {expand?<img src="search.png" alt="" />:null}
+                <img onClick={()=>{setexpand(!expand)}} src={assets.menu} alt="" />
+                {expand?<img src={assets.search} alt="" />:null}
             </div>
             <div onClick={()=>{setInput("")}} className="chat">
-                <img src="newChat.png" alt="" />
+                <img src={assets.newChat} alt="" />
                {expand?<p>New Chat</p>:null}
             </div>
             {expand?
@@ -31,7 +32,7 @@ const Sidebar = () => {
             :null}
         </div>
         <div className="bottom">
-            <img src="setting.png" alt="" />
+            <img src={assets.setting} alt="" />
             {expand?<p>Settings and help</p>:null}
         </div>
       
